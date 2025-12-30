@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Tool Keyword Trend Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 16px 80px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 36px;
+      font-size: 1rem;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .row {
+      background: linear-gradient(180deg, #0b1220, var(--card));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .row:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .keywords {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+
+    .keywords span {
+      color: var(--accent);
+    }
+
+    .btn {
+      flex-shrink: 0;
+      text-decoration: none;
+      color: #020617;
+      background: var(--accent);
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn:hover {
+      background: #7dd3fc;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Tool Keyword Trend Explorer</h1>
+    <p class="subtitle">
+      Explore global Google Trends for AI tool-related keywords (past 7 days).
+      Each row opens Google Trends in a new tab.
+    </p>
+
+    <div class="list">
+
+      <div class="row">
+        <div class="keywords">
+          <span>action</span>, advisor, agent, ai, analyzer
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=action,advisor,agent,ai,analyzer">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>anime</span>, answer, art, assistant, audio
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=anime,answer,art,assistant,audio">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>avatar</span>, best, builder, calculator, cartoon
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=avatar,best,builder,calculator,cartoon">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>cataloger</span>, character, chart, chat, cheat
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=cataloger,character,chart,chat,cheat">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>checker</span>, clue, code, coloring page, comparator
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=checker,clue,code,coloring%20page,comparator">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>compiler</span>, composer, connector, constructor, convert
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=compiler,composer,connector,constructor,convert">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>converter</span>, crawler, creator, dashboard, designer
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=converter,crawler,creator,dashboard,designer">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>detector</span>, diagram, directory, downloader, editor
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=detector,diagram,directory,downloader,editor">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>emoji</span>, enhancer, evaluator, example, explorer
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=emoji,enhancer,evaluator,example,explorer">
+          View Trends
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="keywords">
+          <span>extractor</span>, face, faq, figure, filter
+        </div>
+        <a class="btn" target="_blank"
+          href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=extractor,face,faq,figure,filter">
+          View Trends
+        </a>
+      </div>
+
+      <!-- 后续关键词你可以按相同结构继续追加 -->
+
+    </div>
+
+    <footer>
+      © AI Keyword Trends · Data from Google Trends · Worldwide · Last 7 Days
+    </footer>
+  </div>
+</body>
+</html>

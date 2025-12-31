@@ -3,392 +3,291 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Keyword Groups – Google Trends (Last 7 Days)</title>
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-      --border: #1f2933;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
-      background: linear-gradient(180deg, #020617, #0f172a);
-      color: var(--text);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 24px 16px 64px;
-    }
-
-    header {
-      margin-bottom: 32px;
-    }
-
-    h1 {
-      font-size: 28px;
-      line-height: 1.2;
-      margin: 0 0 12px;
-    }
-
-    p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 16px;
-      margin-top: 24px;
-    }
-
-    a.card {
-      display: block;
-      text-decoration: none;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
-      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
-    }
-
-    a.card:hover {
-      transform: translateY(-2px);
-      border-color: var(--accent);
-      background: #020617;
-    }
-
-    .keywords {
-      font-size: 14px;
-      line-height: 1.5;
-      word-break: break-word;
-    }
-
-    .hint {
-      margin-top: 10px;
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    footer {
-      margin-top: 48px;
-      text-align: center;
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 22px;
-      }
-    }
-  </style>
+  <title>AI Keyword Groups – Google Trends</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>AI Keyword Groups – Google Trends</h1>
-      <p>Worldwide · Last 7 days · Click any group to open Google Trends</p>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <header class="mb-10 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">AI & Tool Keywords – Google Trends Explorer</h1>
+      <p class="text-gray-600 max-w-2xl mx-auto">Each row is a keyword group. Click any group to open Google Trends in a new tab (Worldwide · Past 7 Days).</p>
     </header>
 
-    <div class="grid">
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=action,advisor,agent,ai,analyzer">
-        <div class="keywords">action, advisor, agent, ai, analyzer</div>
-        <div class="hint">View trend →</div>
+    <div class="grid grid-cols-1 gap-4">
+      <!-- Group 1 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=action,advisor,agent,ai,analyzer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">action · advisor · agent · ai · analyzer</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=anime,answer,art,assistant,audio">
-        <div class="keywords">anime, answer, art, assistant, audio</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 2 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=anime,answer,art,assistant,audio" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">anime · answer · art · assistant · audio</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=avatar,best,builder,calculator,cartoon">
-        <div class="keywords">avatar, best, builder, calculator, cartoon</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 3 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=avatar,best,builder,calculator,cartoon" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">avatar · best · builder · calculator · cartoon</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=cataloger,character,chart,chat,cheat">
-        <div class="keywords">cataloger, character, chart, chat, cheat</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 4 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=cataloger,character,chart,chat,cheat" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">cataloger · character · chart · chat · cheat</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=checker,clue,code,coloring page,comparator">
-        <div class="keywords">checker, clue, code, coloring page, comparator</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 5 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=checker,clue,code,coloring%20page,comparator" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">checker · clue · code · coloring page · comparator</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=compiler,composer,connector,constructor,convert">
-        <div class="keywords">compiler, composer, connector, constructor, convert</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 6 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=compiler,composer,connector,constructor,convert" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">compiler · composer · connector · constructor · convert</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=converter,crawler,creator,dashboard,designer">
-        <div class="keywords">converter, crawler, creator, dashboard, designer</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 7 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=converter,crawler,creator,dashboard,designer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">converter · crawler · creator · dashboard · designer</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=detector,diagram,directory,downloader,editor">
-        <div class="keywords">detector, diagram, directory, downloader, editor</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 8 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=detector,diagram,directory,downloader,editor" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">detector · diagram · directory · downloader · editor</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=emoji,enhancer,evaluator,example,explorer">
-        <div class="keywords">emoji, enhancer, evaluator, example, explorer</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 9 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=emoji,enhancer,evaluator,example,explorer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">emoji · enhancer · evaluator · example · explorer</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=extractor,face,faq,figure,filter">
-        <div class="keywords">extractor, face, faq, figure, filter</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 10 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=extractor,face,faq,figure,filter" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">extractor · face · faq · figure · filter</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=finder,font,format,generator,graph">
-        <div class="keywords">finder, font, format, generator, graph</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 11 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=finder,font,format,generator,graph" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">finder · font · format · generator · graph</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=guide,helper,hint,how to,humanizer">
-        <div class="keywords">guide, helper, hint, how to, humanizer</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 12 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=guide,helper,hint,how%20to,humanizer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">guide · helper · hint · how to · humanizer</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=icon,ideas,illustration,image,interior design">
-        <div class="keywords">icon, ideas, illustration, image, interior design</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 13 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=icon,ideas,illustration,image,interior%20design" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">icon · ideas · illustration · image · interior design</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=interpreter,layout,list,logo,maker">
-        <div class="keywords">interpreter, layout, list, logo, maker</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 14 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=interpreter,layout,list,logo,maker" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">interpreter · layout · list · logo · maker</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=manager,meme,model,modifier,monitor">
-        <div class="keywords">manager, meme, model, modifier, monitor</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 15 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=manager,meme,model,modifier,monitor" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">manager · meme · model · modifier · monitor</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=music,navigator,notifier,online,optimizer">
-        <div class="keywords">music, navigator, notifier, online, optimizer</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 16 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=music,navigator,notifier,online,optimizer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">music · navigator · notifier · online · optimizer</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=paraphraser,pattern,photo,picture,planner">
-        <div class="keywords">paraphraser, pattern, photo, picture, planner</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 17 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=paraphraser,pattern,photo,picture,planner" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">paraphraser · pattern · photo · picture · planner</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=portal,portrait,processor,product photo,receiver">
-        <div class="keywords">portal, portrait, processor, product photo, receiver</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 18 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=portal,portrait,processor,product%20photo,receiver" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">portal · portrait · processor · product photo · receiver</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=recommend,recorder,resources,responder,restorer">
-        <div class="keywords">recommend, recorder, resources, responder, restorer</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 19 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=recommend,recorder,resources,responder,restorer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">recommend · recorder · resources · responder · restorer</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=review,sample,scheduler,scraper,sender">
-        <div class="keywords">review, sample, scheduler, scraper, sender</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 20 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=review,sample,scheduler,scraper,sender" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">review · sample · scheduler · scraper · sender</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=simulator,solver,song,sound,speech">
-        <div class="keywords">simulator, solver, song, sound, speech</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 21 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=simulator,solver,song,sound,speech" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">simulator · solver · song · sound · speech</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=starter,studio,style,summarizer,summary">
-        <div class="keywords">starter, studio, style, summarizer, summary</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 22 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=starter,studio,style,summarizer,summary" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">starter · studio · style · summarizer · summary</div>
       </a>
 
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=syncer,tattoo,template,tester,text">
-        <div class="keywords">syncer, tattoo, template, tester, text</div>
-        <div class="hint">View trend →</div>
+      <!-- Group 23 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=syncer,tattoo,template,tester,text" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">syncer · tattoo · template · tester · text</div>
       </a>
-      <!-- Platform / Channel -->
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=tiktok,youtube,facebook,pinterest,amazon">
-        <div class="keywords">tiktok, youtube, facebook, pinterest, amazon</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 24 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=tiktok,youtube,facebook,pinterest,amazon" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">tiktok · youtube · facebook · pinterest · amazon</div>
       </a>
-      
-      <!-- File / Document -->
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=txt,csv,describe,excel,word">
-        <div class="keywords">txt, csv, describe, excel, word</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 25 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=txt,csv,describe,excel,word" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">txt · csv · describe · excel · word</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=png,svg,pdf,word,jpg">
-        <div class="keywords">png, svg, pdf, word, jpg</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 26 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=comment,discuss,exemplify,compare,contrast" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">comment · discuss · exemplify · compare · contrast</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=file,custom,personalize,customize,initial">
-        <div class="keywords">file, custom, personalize, customize, initial</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 27 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=outline,summarize,narrate,define,interpret" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">outline · summarize · narrate · define · interpret</div>
       </a>
-      
-      <!-- Writing / Academic Tasks -->
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=comment,discuss,exemplify,compare,contrast">
-        <div class="keywords">comment, discuss, exemplify, compare, contrast</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 28 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=explain,illustrate,elaborate,analyze,detail" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">explain · illustrate · elaborate · analyze · detail</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=outline,summarize,narrate,define,interpret">
-        <div class="keywords">outline, summarize, narrate, define, interpret</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 29 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=accelerator,benchmark,synchronizer,cleaner" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">accelerator · benchmark · synchronizer · cleaner</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=explain,illustrate,elaborate,analyze,detail">
-        <div class="keywords">explain, illustrate, elaborate, analyze, detail</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 30 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=annotator,transformer,summarizer,modeler,forecaster" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">annotator · transformer · summarizer · modeler · forecaster</div>
       </a>
-      
-      <!-- AI / System / Engineering -->
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=accelerator,benchmark,synchronizer,cleaner">
-        <div class="keywords">accelerator, benchmark, synchronizer, cleaner</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 31 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=authenticator,debugger,emulator,indexer,mapper" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">authenticator · debugger · emulator · indexer · mapper</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=annotator,transformer,summarizer,modeler,forecaster">
-        <div class="keywords">annotator, transformer, summarizer, modeler, forecaster</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 32 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=predictor,configurator,auditor,integrator,reconciler" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">predictor · configurator · auditor · integrator · reconciler</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=authenticator,debugger,emulator,indexer,mapper">
-        <div class="keywords">authenticator, debugger, emulator, indexer, mapper</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 33 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=synthesizer,calibrator,orchestrator,trainer,classifier" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">synthesizer · calibrator · orchestrator · trainer · classifier</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=predictor,configurator,auditor,integrator,reconciler">
-        <div class="keywords">predictor, configurator, auditor, integrator, reconciler</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 34 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=visualizer,validator,enhancer,profiler,estimator" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">visualizer · validator · enhancer · profiler · estimator</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=synthesizer,calibrator,orchestrator,trainer,classifier">
-        <div class="keywords">synthesizer, calibrator, orchestrator, trainer, classifier</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 35 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=quantizer,pruner,ensembler,recommender,aggregator" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">quantizer · pruner · ensembler · recommender · aggregator</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=visualizer,validator,enhancer,profiler,estimator">
-        <div class="keywords">visualizer, validator, enhancer, profiler, estimator</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 36 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=predictor,segmenter,embedder,vectorizer,tokenizer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">predictor · segmenter · embedder · vectorizer · tokenizer</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=quantizer,pruner,ensembler,recommender,aggregator">
-        <div class="keywords">quantizer, pruner, ensembler, recommender, aggregator</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 37 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=augmentor,compressor,integrator,annotator,synthesizer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">augmentor · compressor · integrator · annotator · synthesizer</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=predictor,segmenter,embedder,vectorizer,tokenizer">
-        <div class="keywords">predictor, segmenter, embedder, vectorizer, tokenizer</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 38 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=curator,explainer,tuner,deployer,tester" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">curator · explainer · tuner · deployer · tester</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=augmentor,compressor,integrator,annotator,synthesizer">
-        <div class="keywords">augmentor, compressor, integrator, annotator, synthesizer</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 39 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=retire,job,work,company,invest" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">retire · job · work · company · invest</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=curator,explainer,tuner,deployer,tester">
-        <div class="keywords">curator, explainer, tuner, deployer, tester</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 40 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=birth,adult,graduate,wedding,pregnant" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">birth · adult · graduate · wedding · pregnant</div>
       </a>
-      
-      <!-- Life / General -->
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=retire,job,work,company,invest">
-        <div class="keywords">retire, job, work, company, invest</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 41 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=letter,birthday,state,year,map" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">letter · birthday · state · year · map</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=birth,adult,graduate,wedding,pregnant">
-        <div class="keywords">birth, adult, graduate, wedding, pregnant</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 42 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=file,custom,personalize,customize,initial" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">file · custom · personalize · customize · initial</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=letter,birthday,state,year,map">
-        <div class="keywords">letter, birthday, state, year, map</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 43 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=png,svg,pdf,word,jpg" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">png · svg · pdf · word · jpg</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=second,minute,hour,day,month">
-        <div class="keywords">second, minute, hour, day, month</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 44 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=second,minute,hour,day,month" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">second · minute · hour · day · month</div>
       </a>
-      
-      <!-- Media / AI -->
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=sound,audio,studio,music,video">
-        <div class="keywords">sound, audio, studio, music, video</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 45 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=simulator,assistant,art,restorer,faq" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">simulator · assistant · art · restorer · faq</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=ai music,huggingface,replicate,ai video,ai image">
-        <div class="keywords">ai music, huggingface, replicate, ai video, ai image</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 46 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=sound,audio,studio,music,video" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">sound · audio · studio · music · video</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=sakana ai,sakana,gpts">
-        <div class="keywords">sakana ai, sakana, gpts</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 47 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=ai,review,voice,summary,chat" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">ai · review · voice · summary · chat</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=face to many">
-        <div class="keywords">face to many</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 48 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=translator,convert,extractor,sample,template" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">translator · convert · extractor · sample · template</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=ai generator,ai marker,ai creator,reducer">
-        <div class="keywords">ai generator, ai marker, ai creator, reducer</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 49 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=scraper,detector,checker,generator,calculator" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">scraper · detector · checker · generator · calculator</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=ai,chatgpt,game">
-        <div class="keywords">ai, chatgpt, game</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 50 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=guide,editor,creator,maker,downloader" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">guide · editor · creator · maker · downloader</div>
       </a>
-      
-      <!-- Tool Intent -->
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=simulator,assistant,art,restorer,faq">
-        <div class="keywords">simulator, assistant, art, restorer, faq</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 51 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=ai%20music,huggingface,replicate,ai%20video,ai%20image" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">ai music · huggingface · replicate · ai video · ai image</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=translator,convert,extractor,sample,template">
-        <div class="keywords">translator, convert, extractor, sample, template</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 52 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=sakana%20ai,sakana,gpts" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">sakana ai · sakana · gpts</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=scraper,detector,checker,generator,calculator">
-        <div class="keywords">scraper, detector, checker, generator, calculator</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 53 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=ai%20generator,ai%20marker,ai%20creator,reducer" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">ai generator · ai marker · ai creator · reducer</div>
       </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=guide,editor,creator,maker,downloader">
-        <div class="keywords">guide, editor, creator, maker, downloader</div>
-        <div class="hint">View trend →</div>
-      </a>
-      
-      <a class="card" target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=ai,review,voice,summary,chat">
-        <div class="keywords">ai, review, voice, summary, chat</div>
-        <div class="hint">View trend →</div>
+
+      <!-- Group 54 -->
+      <a target="_blank" href="https://trends.google.com/trends/explore?geo=&date=now%207-d&q=ai,chatgpt,game,face%20to%20many" class="group block rounded-xl bg-white p-4 shadow hover:shadow-lg transition">
+        <div class="font-semibold">ai · chatgpt · game · face to many</div>
       </a>
 
     </div>
 
-    <footer>
-      © 2025 · AI Keyword Trend Explorer
+    <footer class="mt-12 text-center text-sm text-gray-500">
+      Built for fast keyword validation · Mobile friendly · Tailwind CSS
     </footer>
   </div>
 </body>
